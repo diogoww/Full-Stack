@@ -21,6 +21,44 @@
 
                 <h1>Formulário de Matrícula</h1>
                 <p>Preencha os dados abaixo para matricular seu filho na escola de educação infantil Estrelas do Amanhã.</p>
+
+                <form method="post" enctype="multipart/form-data">
+                    <fieldset class="child-info">
+                        <legend>Informações da criança.</legend>
+
+                        <div class="input-wrapper">
+                            <label for="fullname">Nome Completo</label>
+                            <input type="text" id="fullname" name="fullname" placeholder="Digite o nome da criança.">
+                        </div>
+
+                        <div class="input-wrapper">
+                            <label for="birth">Data de Nascimento</label>
+                            <input type="date" id="birth" name="birth">
+                        </div>
+
+                        <div class="select-wrapper">
+                            <label for="gender">Sexo</label>
+                            <select name="gender" id="gender">
+                                <option value="female">Feminino</option>
+                                <option value="male">Masculino</option>
+                                <option value="na">Prefiro não responder</option>
+                            </select>
+                        </div>
+
+                        <div class="textarea-wrapper">
+                            <label for="medical-info">Informações médicas</label>
+                            <textarea name="medical-info" id="medical-info" 
+                            cols="30" rows="10" placeholder="Ex: Intolerância à lactose..."></textarea>
+                        </div>
+
+                        <div class="droparea-wrapper">
+                            <input type="file" id="birth-file" name="birth-file">
+                            <img src="assets/icons/cloud-upload.svg" alt="">
+                            <p>Clique aqui para <br> selecionar o arquivo</p>
+                        </div>
+
+                    </fieldset>
+                </form>
             </div>
         </main>
 
